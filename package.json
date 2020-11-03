@@ -1,0 +1,185 @@
+{
+  "name": "jarvis",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "core-js": "^3.6.5",
+    "echarts": "^4.9.0",
+    "view-design": "^4.4.0",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.1.3",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.3.0",
+    "less-loader": "^7.0.2",
+    "lint-staged": "^9.5.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "browser": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "no-await-in-loop": "warn",
+      "no-console": "error",
+      "no-extra-parens": "warn",
+      "default-case": "warn",
+      "no-alert": "error",
+      "no-eval": "error",
+      "no-implied-eval": "error",
+      "no-lone-blocks": "warn",
+      "no-magic-numbers": "error",
+      "no-useless-return": "error",
+      "vars-on-top": "warn",
+      "wrap-iife": "warn",
+      "no-label-var": "warn",
+      "array-bracket-spacing": "warn",
+      "brace-style": "warn",
+      "comma-dangle": [
+        "error",
+        "never"
+      ],
+      "computed-property-spacing": "warn",
+      "consistent-this": [
+        "error",
+        "self"
+      ],
+      "indent": [
+        "error",
+        2
+      ],
+      "key-spacing": [
+        "error",
+        {
+          "beforeColon": false,
+          "afterColon": true,
+          "mode": "strict"
+        }
+      ],
+      "keyword-spacing": [
+        "error",
+        {
+          "before": true,
+          "after": true
+        }
+      ],
+      "lines-between-class-members": [
+        "error",
+        "always"
+      ],
+      "new-cap": "error",
+      "no-multiple-empty-lines": "warn",
+      "no-trailing-spaces": "warn",
+      "no-unneeded-ternary": "error",
+      "no-whitespace-before-property": "error",
+      "object-curly-spacing": [
+        "error",
+        "never"
+      ],
+      "operator-assignment": [
+        "error",
+        "always"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "semi-spacing": [
+        "error",
+        {
+          "before": false,
+          "after": true
+        }
+      ],
+      "semi-style": [
+        "error",
+        "last"
+      ],
+      "sort-vars": "error",
+      "space-before-blocks": "error",
+      "space-before-function-paren": "error",
+      "space-in-parens": [
+        "error",
+        "never"
+      ],
+      "space-infix-ops": "error",
+      "space-unary-ops": "error",
+      "spaced-comment": [
+        "error",
+        "always"
+      ],
+      "switch-colon-spacing": [
+        "error",
+        {
+          "after": true,
+          "before": true
+        }
+      ],
+      "arrow-spacing": [
+        "error",
+        {
+          "before": true,
+          "after": true
+        }
+      ],
+      "no-duplicate-imports": "error",
+      "no-var": "error",
+      "prefer-const": "error",
+      "prefer-template": "error",
+      "rest-spread-spacing": [
+        "error",
+        "never"
+      ],
+      "symbol-description": "error",
+      "template-curly-spacing": "error"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
